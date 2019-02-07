@@ -1,23 +1,19 @@
-# gatsby-login
-This is a front end boilerplate based on Gatsby. It started from the Gatsby
-[auth tutorial](https://www.gatsbyjs.org/docs/authentication-tutorial/), using
-the [gatsby-starter-photo template](https://github.com/codebushi/gatsby-starter-photon), and
-was customized to work with
-the [koa boilerplate](https://github.com/christroutner/babel-free-koa2-api-boilerplate) back
-end. It demonstrates the basic auth capability of the koa boilerplate.
+# bch-email-frontend
+The repository is the Gatsby front end for a BCH-based email server.
+[The back end](https://github.com/Permissionless-Software-Foundation/bch-email-api)
+provides an API to interact with an [iRedMail](https://iredmail.com/download.html)
+email server.
+
+The goal of this project is to create an easy-to-setup email server that allows
+permissionless account creation using BCH or tokens. Cost-per-email is configurable,
+but will default to $3 USD for 300 emails (to _and_ from)
+
+This front end was originally forked from
+the [gatsby-login](https://github.com/Permissionless-Software-Foundation/gatsby-login) boilerplate.
 
 ## Installation and Usage
-- Install and run the [koa boilerplate](https://github.com/christroutner/babel-free-koa2-api-boilerplate)
-- Clone this repository `git clone https://github.com/christroutner/gatsby-login`
+- Install [iRedMail](https://iredmail.com/download.html) on a Digital Ocean Droplet or equivalent VPS.
+- Install and run the [bch-email-api](https://github.com/Permissionless-Software-Foundation/bch-email-api) back end.
+- Clone this repository `git clone https://github.com/Permissionless-Software-Foundation/bch-email-frontend`
 - Install dependencies: `npm install`
 - Run development server: `npm run develop`
-
-This is a simple demo. The homepage is a login form. And a profile page is accessible
-only if the user is logged in. The profile page displays the username and JWT of
-the logged in user.
-- Click on the _Profile_ link in the nav bar. You will be redirected back to the
-home page, and can not access the private _Profile_ page unless logged in.
-- Add a username and password then click the _Create_ button to create a new user.
-- You will be logged in and take to the _Profile_ page.
-- Log Out. You will be redirected to the Homepage with the login screen.
-- Log In. You will be redirected to the _Profile_ page.
