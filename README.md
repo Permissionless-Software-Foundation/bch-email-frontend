@@ -1,4 +1,7 @@
 # gatsby-login
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Permissionless-Software-Foundation/bch-email-frontend.svg)](https://greenkeeper.io/)
+
 This is a front end boilerplate based on Gatsby. It started from the Gatsby
 [auth tutorial](https://www.gatsbyjs.org/docs/authentication-tutorial/), using
 the [gatsby-starter-photo template](https://github.com/codebushi/gatsby-starter-photon), and
